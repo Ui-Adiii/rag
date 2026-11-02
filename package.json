@@ -1,0 +1,26 @@
+{
+  "name": "rag-chat-bot",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "rag-chat-bot": "./index.ts"
+  },
+  "scripts": {
+    "dev": "bun run index.ts",
+    "build": "bun build index.ts --outdir dist --target bun",
+    "start": "bun run dist/index.js"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^7"
+  },
+  "dependencies": {
+    "@ai-sdk/openai-compatible": "^3.0.82",
+    "@qdrant/js-client-rest": "^1.20.0",
+    "ai": "^7.0.159",
+    "pdf-parse": "^2.4.5"
+  }
+}

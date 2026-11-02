@@ -4,7 +4,7 @@ import { passageEmbeddingModel, queryEmbeddingModel } from "./ai.config";
 export async function generateEmbeddings(chunks: string[]): Promise<number[][]> {
   if (chunks.length === 0) return [];
 
-  const BATCH_SIZE = 8;
+  const BATCH_SIZE = 32;
   const embeddings: number[][] = [];
 
   for (let i = 0; i < chunks.length; i += BATCH_SIZE) {

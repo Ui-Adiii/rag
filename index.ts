@@ -1,4 +1,3 @@
-import { QdrantClient } from "@qdrant/js-client-rest";
 import { searchPDF, uploadPDF } from "./utils";
 
 const PDF_PATH = "./aditya.pdf";
